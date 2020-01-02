@@ -22,7 +22,12 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+FattureInCloudRuby::Settings.configure do |config|
+  config.api_uid = 'INSERT_YOUR_API_UID_HERE'
+  config.api_key = 'INSERT_YOUR_API_KEY_HERE'
+end
+```
 
 ## Development
 
