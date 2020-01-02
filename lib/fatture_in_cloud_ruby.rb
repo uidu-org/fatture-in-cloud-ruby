@@ -1,7 +1,6 @@
 require 'api_struct'
 require 'dry-configurable'
 
-# require 'fatture_in_cloud_ruby/settings'
 require_relative 'fatture_in_cloud_ruby/api_struct_settings'
 
 require_relative "fatture_in_cloud_ruby/version"
@@ -12,4 +11,6 @@ module FattureInCloudRuby
 
   class Error < StandardError; end
   # Your code goes here...
+  setting :api_key
+  setting :api_uid
 end

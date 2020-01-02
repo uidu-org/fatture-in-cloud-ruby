@@ -8,8 +8,8 @@ module FattureInCloudRuby
           path: 'corrispettivi/lista',
           json: {
             anno: year,
-            api_uid: FattureInCloudRuby::Settings.config.api_uid,
-            api_key: FattureInCloudRuby::Settings.config.api_key
+            api_uid: FattureInCloudRuby.config.api_uid,
+            api_key: FattureInCloudRuby.config.api_key
           }
         )
       end
@@ -21,8 +21,8 @@ module FattureInCloudRuby
         post(
           path: 'corrispettivi/nuovo',
           json: {
-            api_uid: FattureInCloudRuby::Settings.config.api_uid,
-            api_key: FattureInCloudRuby::Settings.config.api_key,
+            api_uid: FattureInCloudRuby.config.api_uid,
+            api_key: FattureInCloudRuby.config.api_key,
             tipo: tipo,
             protocollo_auto: true,
             metodo: metodo,
